@@ -1,0 +1,7 @@
+{
+	"name": "paralleldevs/quick_start",
+	"type": "drupal-profile",
+	"description": "Drupal base condiguracion 2.x installation profile",
+	"homepage": "https://github.com/ParallelDevs/quick_start",
+	"license": "GPL-2.0+"
+  }
