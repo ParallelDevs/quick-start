@@ -6,34 +6,24 @@ core: 8.x
 distribution:
   name: Quick Start
 
+  # Base profile
+base profile:
+  name: lightning
+  excluded_dependencies:
+    - lightning_media_video
+
+# Required modules
 dependencies:
-  - node
-  - history
-  - block
-  - block_content
-  - breakpoint
-  - color
-  - config
-  - comment
-  - contextual
-  - contact
-  - quickedit
-  - help
-  - image
-  - options
-  - path
-  - taxonomy
-  - dblog
-  - search
-  - shortcut
-  - toolbar
-  - field_ui
-  - file
-  - rdf
-  - views
-  - views_ui
-  - editor
-  - ckeditor
+  # contrib from Lightning
+  - entity_browser_entity_form
+  - field_group
+  - page_manager_ui
+  # - media entities
+  - lightning_media_document
+  - lightning_media_image
+  - lightning_media_instagram
+  - lightning_media_twitter
+  - paragraphs
 
 themes:
   - bartik
