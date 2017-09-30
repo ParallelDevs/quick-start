@@ -1,7 +1,58 @@
 {
 	"name": "paralleldevs/quick_start",
 	"type": "drupal-profile",
-	"description": "Drupal base condiguracion 2.x installation profile",
+	"description": "Drupal base configuration 2.x installation profile",
 	"homepage": "https://github.com/ParallelDevs/quick_start",
-	"license": "GPL-2.0+"
+	"license": "GPL-2.0+",
+	"minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+	],
+	"require": {
+    "roave/security-advisories": "dev-master",
+    "composer/installers": "^1.0",
+    "drupal-composer/drupal-scaffold": "^2.0.0",
+    "cweagans/composer-patches": "^1.6",
+    "acquia/lightning": "^2.1",
+    "drupal/field_group": "^1.0",
+    "drupal/paragraphs": "^1.1",
+    "drupal/components": "^1.0"
+  },
+	"scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+	},
+	"extra": {
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+        "2699157 - Plugin Lazy loading can cause usort warning":
+          "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
+        "2759397 - Patch EntityReferenceItemNormalizer to prevent recursion":
+          "https://www.drupal.org/files/issues/2759397-1-entity_reference_recursion.patch",
+        "2679775 - Fixes float issue with inline label fields (entity references on most cases).":
+          "https://www.drupal.org/files/issues/2679775-11-inline-labels.patch"
+      }
+    },
+    "installer-paths": {
+      "core": [
+        "type:drupal-core"
+      ],
+      "modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "build/html/drush": [
+        "type:drupal-drush"
+      ]
+    }
   }
+}
