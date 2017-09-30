@@ -5,23 +5,24 @@
 	"homepage": "https://github.com/ParallelDevs/quick_start",
 	"license": "GPL-2.0+",
 	"minimum-stability": "dev",
-  "prefer-stable": true,
-  "repositories": [
+    "prefer-stable": true,
+    "repositories": [
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
 	],
 	"require": {
-    "roave/security-advisories": "dev-master",
-    "composer/installers": "^1.0",
-    "drupal-composer/drupal-scaffold": "^2.0.0",
-    "cweagans/composer-patches": "^1.6",
-    "acquia/lightning": "^2.1",
-    "drupal/field_group": "^1.0",
-    "drupal/paragraphs": "^1.1",
-    "drupal/components": "^1.0"
-  },
+        "roave/security-advisories": "dev-master",
+        "composer/installers": "^1.0",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "cweagans/composer-patches": "^1.6",
+        "acquia/lightning": "^2.1",
+        "drupal/field_group": "^1.0",
+        "drupal/paragraphs": "^1.1",
+        "drupal/components": "^1.0",
+		"drupal/admin_toolbar": "^1.20"
+    },
 	"scripts": {
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
 	},

@@ -6,23 +6,22 @@ core: 8.x
 distribution:
   name: Quick Start
 
-  # Base profile
 base profile:
   name: lightning
   excluded_dependencies:
+    - lightning_contact_form
+    - lightning_search
+    - lightning_roles
+    - lightning_media_document
+    - lightning_media_instagram
+    - lightning_media_twitter
     - lightning_media_video
+    - lightning_workflow
+    - lightning_scheduled_updates
 
-# Required modules
 dependencies:
-  # contrib from Lightning
-  - entity_browser_entity_form
+  - admin_toolbar
   - field_group
-  - page_manager_ui
-  # - media entities
-  - lightning_media_document
-  - lightning_media_image
-  - lightning_media_instagram
-  - lightning_media_twitter
   - paragraphs
 
 themes:
