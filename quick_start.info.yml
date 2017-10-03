@@ -21,6 +21,7 @@ base profile:
 
 dependencies:
   - admin_toolbar
+  - admin_toolbar_tools
   - field_group
   - paragraphs
 
