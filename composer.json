@@ -17,7 +17,7 @@
     "composer/installers": "^1.0",
     "drupal-composer/drupal-scaffold": "^2.0.0",
     "cweagans/composer-patches": "^1.6",
-    "acquia/lightning": "^2.2",
+    "acquia/lightning": "~2.2.0",
     "drupal/field_group": "^1.0",
     "drupal/paragraphs": "^1.1",
     "drupal/components": "^1.0",
