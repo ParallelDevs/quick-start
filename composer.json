@@ -26,8 +26,10 @@
     "drupal/config_split": "^1.2",
     "drupal/field_group": "^1.0",
     "drupal/paragraphs": "^1.1",
-    "drupal/shield": "^1.1",
     "roave/security-advisories": "dev-master"
+	},
+  "require-dev": {
+    "drupal/shield": "^1.1"
   },
 	"config": {
     "sort-packages": true
