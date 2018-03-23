@@ -1,0 +1,18 @@
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+folder: ../config/splits/prod
+module:
+  big_pipe: 0
+theme: {  }
+blacklist:
+  - google_analytics.settings
+  - system.logging
+  - system.performance
+  - views.settings
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

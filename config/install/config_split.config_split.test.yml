@@ -1,0 +1,15 @@
+langcode: en
+status: false
+dependencies: {  }
+id: test
+label: Test
+folder: ../config/splits/qa
+module:
+  shield: 0
+theme: {  }
+blacklist:
+  - shield.settingschmof
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 5

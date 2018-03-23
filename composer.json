@@ -10,11 +10,11 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-		},
-		{
-				"type": "composer",
-				"url": "https://asset-packagist.org"
-		}
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
   ],
   "require": {
     "composer/installers": "^1.0",
@@ -24,12 +24,13 @@
     "drupal/components": "^1.0",
     "drupal/config_split": "^1.2",
     "drupal/core": "^8.5",
+    "drupal/devel": "^1.2",
     "drupal/field_group": "^1.0",
     "drupal/paragraphs": "^1.1",
     "drupal/shield": "^1.2",
     "roave/security-advisories": "dev-master"
   },
-	"config": {
+  "config": {
     "sort-packages": true
   },
   "scripts": {

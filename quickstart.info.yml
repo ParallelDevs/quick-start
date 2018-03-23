@@ -21,6 +21,7 @@ dependencies:
   - editor
   - help
   - image
+  - media
   - menu_ui
   - options
   - path
@@ -33,11 +34,11 @@ dependencies:
   - rdf
   - views
   - views_ui
-  - tour
 
   # Contrib
   - admin_toolbar
   - admin_toolbar_tools
+  - config_split
   - field_group
   - paragraphs
 
