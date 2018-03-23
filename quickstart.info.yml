@@ -6,20 +6,36 @@ core: 8.x
 distribution:
   name: Quick Start
 
-base profile:
-  name: lightning
-  excluded_dependencies:
-    - lightning_contact_form
-    - lightning_search
-    - lightning_roles
-    - lightning_media_document
-    - lightning_media_instagram
-    - lightning_media_twitter
-    - lightning_media_video
-    - lightning_workflow
-    - lightning_scheduled_updates
-
 dependencies:
+  # Core
+  - node
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - contextual
+  - contact
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+
+  # Contrib
   - admin_toolbar
   - admin_toolbar_tools
   - field_group
