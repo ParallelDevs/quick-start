@@ -15,7 +15,6 @@ dependencies:
   - color
   - config
   - contextual
-  - contact
   - datetime
   - block_content
   - editor
@@ -27,7 +26,6 @@ dependencies:
   - path
   - taxonomy
   - dblog
-  - shortcut
   - toolbar
   - field_ui
   - file
@@ -39,7 +37,6 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - config_split
-  - field_group
   - paragraphs
 
 themes:
